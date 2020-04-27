@@ -1,0 +1,34 @@
+{
+  "name": "proj-react-design-patterns-best-practices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KenStoneBlue/proj-react-design-patterns-best-practices.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KenStoneBlue/proj-react-design-patterns-best-practices/issues"
+  },
+  "homepage": "https://github.com/KenStoneBlue/proj-react-design-patterns-best-practices#readme",
+  "dependencies": {
+    "@babel/core": "7.9.0",
+    "@babel/node": "7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "create-react-app": "3.4.1",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "react-scripts": "2.1.8"
+  },
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
+}
