@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import Header from './components/layout/Header';
 import Content from './components/layout/Content';
 import Footer from './components/layout/Footer';
+import Mylist from './components/list/index';
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -14,6 +16,7 @@ class App extends Component {
           <p>
             Javascript React Development
           </p>
+          <Mylist />
         </Content>
 
         <Footer
