@@ -5,6 +5,15 @@ import Footer from './components/layout/Footer';
 import Mylist from './components/list/index';
 import './App.css';
 
+const some_list = [
+  {'excerpt': 'the excerpt whatever', 'title': 'the title ofit'},
+  {'excerpt': 'the excerpt whatever', 'title': 'the title ofit'},
+  {'excerpt': 'the excerpt whatever', 'title': 'the title ofit'},
+  {'excerpt': 'the excerpt whatever', 'title': 'the title ofit'},
+  {'excerpt': 'the excerpt whatever', 'title': 'the title ofit'},
+  {'excerpt': 'the excerpt whatever', 'title': 'the title ofit'},
+];
+
 
 class App extends Component {
   render() {
@@ -16,7 +25,7 @@ class App extends Component {
           <p>
             Javascript React Development
           </p>
-          <Mylist />
+          <Mylist some_list={some_list} />
         </Content>
 
         <Footer
