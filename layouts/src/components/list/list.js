@@ -4,11 +4,12 @@ import Item from './item';
 
 const List = ({ collection, textKey, titleKey }) => ( 
   <ul> 
-    {collection.map(item => 
+    {collection.map((item, index) => 
       <Item
         key={item.id} 
         text={item[textKey]} 
         title={item[titleKey]} 
+        i={index}
       /> 
     )} 
   </ul> 
