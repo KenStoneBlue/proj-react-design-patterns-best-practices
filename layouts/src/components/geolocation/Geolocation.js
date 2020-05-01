@@ -1,46 +1,17 @@
 import React from 'react';
+import { number } from 'prop-types';
 
+const Geolocation = ({ latitude, longitude }) => (
+  <div>
+    <div>Latitude: {latitude}</div>
+    <div>Longitude: {longitude}</div>
+  </div>
+);
 
-class Geolocation extends React.Component{
-
-  constructor(props) { 
-    super(props);
-   
-    this.state = { 
-      latitude: null, 
-      longitude: null
-    };
-   
-    this.handleSuccess = this.handleSuccess.bind(this);
-  }
-
-
-  componentDidMount() { 
-  
-    if (navigator.geolocation) { 
-      navigator.geolocation.getCurrentPosition(this.handleSuccess);
-    } 
-  }
-
- handleSuccess({ coords: { latitude, longitude } }) { 
-    this.setState({ 
-      latitude, 
-      longitude
-    }); 
-    console.log('latitude, longitude');
-    console.log(latitude, longitude);
-  }
-
-  render() { 
-    return ( 
-      <div>
-        <h1>Geolocation:</h1>
-        <div>Latitude: {this.state.latitude}</div> 
-        <div>Longitude: {this.state.longitude}</div> 
-      </div> 
-    );
-  }
-
-}
+Geolocation.propTypes = {
+  latitude: number,
+  longitude: number
+};
 
 export default Geolocation;
+
